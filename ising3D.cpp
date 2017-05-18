@@ -33,13 +33,12 @@ int main(int argc, char** argv) {
     outfile.open("output.csv");
     reps_total=reps+reps_eq;
     
-    int i,j,k; double spin;
+    int i,j,k;
     for (i=0; i<SIZE; i++) {
         for (j=0; j<SIZE; j++) {
             for (k=0; k<SIZE; k++) {
                 get_random();
-                spin=qadran;
-                if (spin<0.50) {
+                if (qadran<0.50) {
                     Lattice[i][j][k] = -1;
                 }
                 else {
