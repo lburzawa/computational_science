@@ -13,7 +13,7 @@ void get_random() {
     int status = vdRngUniform(VSL_RNG_METHOD_UNIFORM_STD,stream,1,&qadran,0.0,1.0);
 }
 
-const int SIZE=8;
+const int SIZE=16;
 int Lattice[SIZE][SIZE][SIZE];
 int OldSpin;
 int Reflection=-1;
@@ -30,7 +30,7 @@ void CalculateMagnetization();
 
 int main(int argc, char** argv) {
     std::ofstream outfile;
-    outfile.open("output8.csv");
+    outfile.open("output.csv");
     reps_total=reps+reps_eq;
     
     int i,j,k; double spin;
