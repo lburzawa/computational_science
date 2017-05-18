@@ -50,9 +50,6 @@ int main(int argc, char** argv) {
         for (count=0; count<reps_total; count++) {
             BuildCluster();
             if (count>reps_eq) {
-                /*if (d%100==0) {
-                 TakeImage();
-                 }*/
                 CalculateMagnetization();
             }
         }
