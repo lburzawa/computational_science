@@ -1,3 +1,11 @@
+//
+//  percolation.cpp
+//  
+//
+//  Created by Lukasz Burzawa on 5/11/17.
+//
+//
+
 #include <random>
 #include <iostream>
 #include <fstream>
@@ -32,10 +40,10 @@ int main(int argc, char** argv) {
             std::cout << "This is prob " << p << " and iteration " << i << std::endl;
         }
         get_random(p);
-        for (j=0; j<SIZE-1; j++) {
+        for (j=0; j<SIZE; j++) {
             outfile << lattice[j] << ',';
         }
-        outfile << lattice[j] << std::endl;
+        outfile << "1,0,0,0,0" << std::endl;
     }
     outfile.close();
     return 0;
