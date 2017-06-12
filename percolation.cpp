@@ -1,11 +1,3 @@
-//
-//  percolation.cpp
-//  
-//
-//  Created by Lukasz Burzawa on 5/11/17.
-//
-//
-
 #include <random>
 #include <iostream>
 #include <fstream>
