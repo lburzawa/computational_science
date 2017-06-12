@@ -1,3 +1,3 @@
-# Computational Science
+# Materials Science
 
-Contains code for Ising 2D, 3D and percolation simulations using Intel Math Kernel Library. Tested with Intel compiler version 17.0.1.132.
+Percolation, Clean Ising and RFIM simulations are using Intel Math Kernel Library for random number generation which is a more efficient option than C++ standard library.
